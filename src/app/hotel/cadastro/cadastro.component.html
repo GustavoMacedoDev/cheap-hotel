@@ -1,0 +1,36 @@
+ 
+<form (ngSubmit)="salvar()">   
+ 
+    <br/>
+    <h3>{{titulo}}</h3>
+ 
+    <label>Código:
+        <input type="input" name="id" size="10" [(ngModel)]="hotel.idHotel" disabled/>
+    </label><br/><br/>
+ 
+    <label>Nome:
+        <input type="input" name="nome" size="30" [(ngModel)]="hotel.nome"/>
+    </label><br/><br/>
+
+    <label>Cnpj:
+        <input type="input" name="Cnpj" size="30" [(ngModel)]="hotel.cnpj"/>
+    </label><br/><br/>
+
+    <label>Telefone:
+        <input type="input" name="telefone" size="30" [(ngModel)]="hotel.telefone"/>
+    </label><br/><br/>
+
+    <label>Email:
+        <input type="input" name="email" size="30" [(ngModel)]="hotel.email"/>
+    </label><br/><br/>
+
+    <label>Horário de Checkin:
+        <input type="input" name="horarioCheckin" size="30" [(ngModel)]="hotel.horarioCheckin"/>
+    </label><br/><br/>
+
+    <label>Horário de Checkout:
+        <input type="input" name="horarioCheckout" size="30" [(ngModel)]="hotel.horarioCheckout"/>
+    </label><br/><br/>
+ 
+    <button type="submit">Salvar</button>
+</form>
